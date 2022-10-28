@@ -3,8 +3,9 @@ const outputEll = document.querySelector('#name-output');
 const nameEll = ({ currentTarget }) => {
     outputEll.textContent = currentTarget.value;
 
-    if (nameEll.textContent === "") {
-        nameEll.textContent = "Anonymous"
+    if (outputEll.textContent === "") {
+
+        return outputEll.textContent = "Anonymous"
     }
 }
 

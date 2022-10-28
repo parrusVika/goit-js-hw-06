@@ -8,3 +8,5 @@ btn.addEventListener('click', chengeColor);
 function chengeColor(color) {
   document.body.style.background = getRandomHexColor();
 }
+const color = getRandomHexColor()
+document.body.setAttribute('style', `background-color: ${color}`)
