@@ -8,5 +8,11 @@ btn.addEventListener('click', chengeColor);
 function chengeColor(color) {
   document.body.style.background = getRandomHexColor();
 }
-const color = getRandomHexColor()
-document.body.setAttribute('style', `background-color: ${color}`)
+const color = () => {
+  const bodyColor = getRandomHexColor()
+  spanTextRef.textContent = bodyColor;
+  document.body.setAttribute('style', `background-color: ${color}`)
+}
+// const color = getRandomHexColor()
+// document.body.setAttribute('style', `background-color: ${color}`)
+
